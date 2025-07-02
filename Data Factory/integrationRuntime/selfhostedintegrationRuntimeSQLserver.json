@@ -1,0 +1,9 @@
+{
+	"name": "selfhostedintegrationRuntimeSQLserver",
+	"properties": {
+		"type": "SelfHosted",
+		"typeProperties": {
+			"selfContainedInteractiveAuthoringEnabled": false
+		}
+	}
+}

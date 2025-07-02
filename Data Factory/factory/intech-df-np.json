@@ -1,0 +1,9 @@
+{
+	"name": "intech-df-np",
+	"location": "westus2",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "e0fab40a-7d4a-4444-b0a2-6618b93cb1d1",
+		"tenantId": "63c3c9c1-e824-413f-b435-2f0cabb2828f"
+	}
+}

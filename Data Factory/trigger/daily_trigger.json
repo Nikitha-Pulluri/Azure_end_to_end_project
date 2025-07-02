@@ -1,0 +1,33 @@
+{
+	"name": "daily_trigger",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "copy_all_tables",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Day",
+				"interval": 1,
+				"startTime": "2025-07-01T20:19:00",
+				"endTime": "2025-07-02T20:19:00",
+				"timeZone": "Eastern Standard Time",
+				"schedule": {
+					"minutes": [
+						12
+					],
+					"hours": [
+						17
+					]
+				}
+			}
+		}
+	}
+}
