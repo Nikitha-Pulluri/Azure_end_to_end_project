@@ -1,18 +1,18 @@
 # Azure End-to-End Data Engineering Project
 
-## 📘 Introduction
+## Introduction
 
 This project demonstrates a complete data engineering workflow on Microsoft Azure. Data is sourced from an on-premise SQL Server and ingested into Azure, transformed using Databricks, modeled with Synapse Analytics, and visualized through Power BI. This exercise enhances data orchestration, security, transformation, and analytics capabilities.
 
 ---
 
-## 🏗️ Project Architecture
+## Project Architecture
 
 ![Architecture Diagram](./A_flowchart_in_the_image_illustrates_an_Azure_end-.png)
 
 ---
 
-## 🛠️ Tools Used
+## Tools Used
 
 * **SQL Server Management Studio (SSMS)**
 * **Azure Data Factory (ADF)**
@@ -25,7 +25,7 @@ This project demonstrates a complete data engineering workflow on Microsoft Azur
 
 ---
 
-## 📃 Step-by-Step Implementation
+## Step-by-Step Implementation
 
 ### Step 1: Setting Up the Azure Environment
 
@@ -117,7 +117,7 @@ This project demonstrates a complete data engineering workflow on Microsoft Azur
 
 ---
 
-## 🔍 Resource Explanation
+## Resource Explanation
 
 ### On-Prem SQL Server
 
@@ -165,7 +165,7 @@ Fully transformed, query-ready data structured for analytics and reporting. This
 
 ---
 
-## 📚 Resources
+## Resources
 
 * Dataset: [AdventureWorks Sample](https://learn.microsoft.com/en-us/sql/samples/adventureworks-install-configure?view=sql-server-ver17&tabs=ssms)
 * SSMS: [Install Link](https://learn.microsoft.com/en-us/ssms/install/install?view=sql-server-ver17)
