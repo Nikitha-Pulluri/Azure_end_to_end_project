@@ -8,7 +8,7 @@ This project demonstrates a complete data engineering workflow on Microsoft Azur
 
 ## Project Architecture
 
-![Architecture Diagram](./A_flowchart_in_the_image_illustrates_an_Azure_end-.png)
+![Architecture Diagram](./Architecture.png)
 
 ---
 
