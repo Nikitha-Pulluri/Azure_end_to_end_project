@@ -42,8 +42,19 @@ This project demonstrates a complete data engineering workflow on Microsoft Azur
   * Azure Key Vault (`intech-keyvault-np`)
   * Azure Storage Account (`intechstoragenp`)
   * Azure Databricks Workspace (`intech-databricks`)
+ 
 
-### Step 2: Copying Data from SQL Server
+### Step 2: Creating the Storage Account and Containers
+
+* Created an **Azure Storage Account** with **hierarchical namespace enabled** to use it as Data Lake Gen2.
+* Within the storage account, created three containers:
+
+  * `bronze` for raw/staged data
+  * `silver` for cleaned/formatted data
+  * `gold` for analytics-ready data used by Synapse and Power BI
+
+
+### Step 3: Copying Data from SQL Server
 
 * In Azure Data Factory, created a pipeline with the **Copy Data** activity.
 * Created **Linked Services**:
@@ -52,7 +63,7 @@ This project demonstrates a complete data engineering workflow on Microsoft Azur
   * **Sink**: Azure Data Lake using `AzureDataLakeStorageLinkedServices` with default Integration Runtime.
 * Configured the **copy activity** to move data from SQL Server to Azure Data Lake in **Parquet** format.
 
-### Step 3: Creating an ADF Pipeline
+### Step 4: Creating an ADF Pipeline
 
 * Developed a pipeline named `copy_all_tables`.
 * Included the following activities:
@@ -61,7 +72,7 @@ This project demonstrates a complete data engineering workflow on Microsoft Azur
   * **ForEach activity** to iterate through each table.
   * **Copy Data activity** within the loop to copy each table from SQL Server to Azure Data Lake.
 
-### Step 4: Data Transformations with Databricks
+### Step 5: Data Transformations with Databricks
 
 * Launched **Azure Databricks** and created a single-node cluster.
 * Created and executed notebooks:
@@ -71,7 +82,7 @@ This project demonstrates a complete data engineering workflow on Microsoft Azur
   * **`silver_to_gold`**: Renamed columns to snake\_case and performed final transformations.
 * Integrated Databricks notebooks into ADF pipeline for automation.
 
-### Step 5: Data Loading into Synapse
+### Step 6: Data Loading into Synapse
 
 * In **Synapse Studio**, created a **serverless SQL database** named `gold_db`.
 * Linked the storage account to Synapse for querying Delta tables.
@@ -84,7 +95,7 @@ This project demonstrates a complete data engineering workflow on Microsoft Azur
 * Developed a stored procedure to dynamically create views from all gold tables.
 * Executed Synapse pipeline to expose all views for Power BI.
 
-### Step 6: Data Reporting with Power BI
+### Step 7: Data Reporting with Power BI
 
 * Opened Power BI and connected using the **Azure Synapse SQL endpoint**.
 * Used Microsoft account for authentication.
@@ -99,17 +110,17 @@ This project demonstrates a complete data engineering workflow on Microsoft Azur
   * **Donut Chart** to show gender split based on title field
   * **Slicers** for Title and Product Category
 
-### Step 7: Automation and Monitoring
+### Step 8: Automation and Monitoring
 
 * Scheduled ADF pipelines to run daily for automation.
 * Enabled monitoring in ADF and Synapse for real-time pipeline status.
 
-### Step 8: Security and Governance
+### Step 9: Security and Governance
 
 * Configured **Azure Entra ID** for **Role-Based Access Control (RBAC)**.
 * Used **Azure Key Vault** to securely manage credentials and secrets.
 
-### Step 9: End-to-End Testing
+### Step 10: End-to-End Testing
 
 * Added new records in SQL Server.
 * Verified that pipelines ran successfully.
