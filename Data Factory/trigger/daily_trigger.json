@@ -16,15 +16,15 @@
 			"recurrence": {
 				"frequency": "Day",
 				"interval": 1,
-				"startTime": "2025-07-01T20:19:00",
-				"endTime": "2025-07-02T20:19:00",
+				"startTime": "2025-07-02T14:34:00",
+				"endTime": "2025-07-07T14:33:00",
 				"timeZone": "Eastern Standard Time",
 				"schedule": {
 					"minutes": [
-						12
+						34
 					],
 					"hours": [
-						17
+						14
 					]
 				}
 			}
