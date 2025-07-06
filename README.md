@@ -180,5 +180,4 @@ Fully transformed, query-ready data structured for analytics and reporting. This
 
 * Dataset: [AdventureWorks Sample](https://learn.microsoft.com/en-us/sql/samples/adventureworks-install-configure?view=sql-server-ver17&tabs=ssms)
 * SSMS: [Install Link](https://learn.microsoft.com/en-us/ssms/install/install?view=sql-server-ver17)
-* YouTube Video: [Mr. K's Tutorial](https://youtu.be/ygJ11fzq_ik?si=wN9ww46PZvwx_la7)
-* GitHub Reference: [Luke Byrne's Project](https://github.com/lukejbyrne/rg-data-engineering-project?email=pullurinikitha1515%40gmail.com)
+* YouTube Video: [Tutorial](https://youtu.be/ygJ11fzq_ik?si=wN9ww46PZvwx_la7)
